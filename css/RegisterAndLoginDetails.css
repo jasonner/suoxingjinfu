@@ -1,0 +1,56 @@
+.myreward_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.myreward_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left: 0.3rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 如何注册*/
+.HowRegister{
+	width: 100%;
+	background: #fff;
+	margin-top: 0.2rem;
+	padding-bottom: 0.26rem;
+	box-shadow: 0.03rem 0.1rem 0.03rem #eee;
+}
+.HowRegister:nth-last-of-type(1){
+	margin-bottom: 2.22rem;
+}
+.HowRegister_div1{
+	width: 92%;
+	height: 0.9rem;
+	font-size: 0.3rem;
+	margin: 0 auto;
+	border-bottom: 0.01rem solid #DFDFDF;
+	line-height: 0.9rem;
+	color: #333;
+}
+.HowRegister_div1 span{
+	color: #2DABF7;
+	margin-right: 0.2rem;
+	font-size: 0.3rem;
+}
+.HowRegister p{
+	font-size: 0.24rem;
+	line-height: 0.5rem;
+	padding-left:0.7rem;
+	padding-right: 0.37rem;
+	color: #999;
+}
+.attention{
+	color: #2DABF7;
+}

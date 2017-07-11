@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>风险测评1</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/AssessmentItems.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script>
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		<div class="register_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>风险测评</div>
+		</div>
+		<div class="msgText">
+			<h3>风险承受能力测评(1/10)</h3>
+			<h4>请问您的年龄是什么范围？</h4>
+			<div class="How_old_box">
+				<p class="How_old2">18~25岁</p>
+				<p class="How_old2">25~28岁</p>
+				<p class="How_old2">28~30岁</p>
+				<p class="How_old2">30~45岁</p>
+				<p class="How_old2">45~60岁</p>
+			</div>
+			
+			<div class="goText">
+				<p>上一题</p>
+				<p id="nextPage">下一题</p>
+			</div>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+		<script>
+			$(function(){
+				change();
+			})
+			function change(){	
+				$(".How_old_box p").on("touchend",function(){
+					$(this).siblings().removeClass("How_old1").addClass("How_old2");
+					$(this).removeClass("How_old2").addClass("How_old1");
+					switch($(this).index())
+    				{
+				       	case 0:$("#nextPage").on("touchend",function(){
+				           		window.location.href="steady.html"
+				          	}) 
+				          	break;
+				        case 1:$("#nextPage").on("touchend",function(){
+				           		window.location.href="steady.html"
+				         	})
+				        break;
+				        case 2:$("#nextPage").on("touchend",function(){
+				           		window.location.href="steady.html"
+				           	})
+				        break;
+				        case 3:$("#nextPage").on("touchend",function(){
+				           		window.location.href="steady.html"
+				          	})
+				        break;
+						case 4:$("#nextPage").on("touchend",function(){
+				           		window.location.href="steady.html"
+				          })
+						break;
+    				}
+				})
+			}
+		</script>
+	</body>
+</html>

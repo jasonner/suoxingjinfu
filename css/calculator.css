@@ -1,0 +1,69 @@
+.register_header{
+	width: 100%;
+	height: 0.94rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+	box-shadow: 3px 20px 10px #eee;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 拟投金额*/
+.ProposedInvestmentAmount{
+	width: 100%;
+	height: 1rem;
+	background: #fff;
+	margin-top: 0.2rem;
+	line-height: 1rem;
+	box-shadow: 3px 20px 10px #eee;
+}
+.ProposedInvestmentAmount p{
+	font-size: 0.28rem;
+	color: #333;
+	padding:0 0.3rem;
+}
+.ProposedInvestmentAmountP1 i{
+	font-size: 0.3rem;
+	margin-right: 0.27rem;
+}
+.ProposedInvestmentAmountP1 input{
+	height: 0.8rem;
+	font-size: 0.3rem;
+	line-height: 0.8rem;
+	margin-top: 0.1rem;
+	border: none;
+	text-align:right;
+	float: right;
+	margin-right: 0.3rem;
+}
+.ProposedInvestmentAmountP1 span{
+	color: #999;
+	float: right;
+}
+/*
+ 
+ * 计算*/
+.jisuan{
+	width: 92%;
+	height: 0.9rem;
+	margin: 0 auto;
+	background: #3793e0;
+	color: #fff;
+	border-radius: 0.1rem;
+	font-size: 0.33rem;
+	text-align: center;
+	line-height: 0.9rem;
+	margin-top: 1.17rem;
+	}

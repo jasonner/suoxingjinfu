@@ -1,0 +1,80 @@
+body{
+	background:#fff;
+}
+.register_header{
+	width: 100%;
+	height: 1.02rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+}
+.register_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 用户信息*/
+.usermsgbox{
+	height: 2.68rem;
+	width: 100%;
+}
+.usermsgbox div{
+	height: 1.12rem;
+	width: 76.8%;
+	margin: 0 auto;
+	padding-left:0.23rem;
+	border-bottom: 1px solid #DFDFDF;
+	line-height: 1.12rem;
+}
+.usermsgbox div input{
+	border: none;
+	margin-left: 0.6rem;
+	width: 2.8rem;
+	height: 1.12rem;
+	font-size: 0.3rem;
+}
+.userPassword p span{
+	margin-left: 1.1rem;
+}
+.usermsg p{
+	font-size: 0.45rem;
+}
+.usermsg p span{
+	font-size: 0.28rem;
+	color: #2DABF7;
+}
+/*
+ 
+ * 登录*/
+.registerBtn{
+	width: 80%;
+	height: 0.88rem;
+	margin: 0 auto;
+	margin-top: 1.24rem;
+	background: #3793e0;
+	font-size: 0.34rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 0.1rem;
+	line-height: 0.88rem;
+}
+/*
+ 
+ * 注册and忘记密码*/
+.register a{
+	font-size: 0.28rem;
+	color: #3793de;
+}
+.register a:nth-of-type(1){
+	margin-left: 0.75rem;
+	margin-right: 4.34rem;
+}

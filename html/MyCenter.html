@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资讯中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font1/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/MyCenter.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script>
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		<div class="register_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>个人中心</div>
+		</div>
+		<!--个人信息-->
+		<div class="investList">
+			<img src="../img/suoxinglogo.png"/>
+			<span id="userName">136****6619</span>
+		</div>
+		<!--实名认证-->
+		<div class="realName">
+			<p class="iconfont icon-shimingrenzheng"><span>实名认证</span></p>
+			<p><span>未认证</span><i class="iconfont icon-dayu-gengduo"></i></p>
+		</div>
+		<div class="realName">
+			<p class="iconfont icon-bangdingshouji"><span>绑定手机</span></p>
+			<p><span style="color: #666;">已绑定</span><i class="iconfont icon-dayu-gengduo"></i></p>
+		</div>
+		<div class="realName">
+			<p class="iconfont icon-yinhangqia"><span>银行卡管理</span></p>
+			<p><span style="color: #666;">1张</span><i class="iconfont icon-dayu-gengduo"></i></p>
+		</div>
+		<div class="realName" id="PasswordManager">
+			<p class="iconfont icon-mima"><span>密码管理</span></p>
+			<p><i class="iconfont icon-dayu-gengduo"></i></p>
+		</div>
+		<div class="bindEmail">
+			<p class="iconfont icon-bangdingyouxiang"><span>绑定邮箱</span></p>
+			<p> <span>未绑定</span><i class="iconfont icon-dayu-gengduo"></i></p>
+		</div>
+		<div class="bindEmail">
+			<p class="iconfont icon-fengxianpinggu"><span>风险测评</span></p>
+			<p> <span style="color: #999;">未评估，可评估3次</span><i class="iconfont icon-dayu-gengduo"></i></p>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+		<script src="../js/MyCenter.js"></script>
+	</body>
+</html>

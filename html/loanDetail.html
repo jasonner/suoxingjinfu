@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>借款标的详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/loanDetail.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script type="text/javascript">
+					(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);
+		</script>
+		
+		<div class="register_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>借款标的详情</div>
+		</div>
+		<!--企业贷款-->
+	    <div class="news">
+	    	<p>企业贷款001</p>
+	    	<p>年化利率</p>
+	    	<p>12.45<span>%</span></p>
+	    </div>
+	  <!--募款期限-->
+	  <div class="Fundraising_deadline">
+	  	<a href="###">资金募集期最长不超过5个工作日</a>
+	  </div>
+	  <!--发放项目-->
+	 <div class="Bearing_tom_box">
+    	<div class="Bearing_tom">
+	    	<dl>
+	    		<dt class="iconfont icon-duihao"><span></span></dt>
+	    		<dd>发布项目</dd>
+	    	</dl>
+	    	<dl>
+	    		<dt class="iconfont icon-duihao"><span></span></dt>
+	    		<dd>开始放款</dd>
+	    	</dl>
+	    	<dl>
+	    		<dt class="iconfont icon-gengduo" ></dt>
+	    		<dd>开始还款</dd>
+	    	</dl>
+    	</div>
+    	<div class="list_data">
+    		<p>2017-05-12</p>
+    		<p>2017-08-12</p>
+    		<p>2017-08-12</p>
+    	</div>
+	</div>
+	<!--项目详情-->
+	<div class="projectList">
+		<div class="list_box">
+			<a href="###">项目详情</a>
+			<a href="###">借款企业信息</a>
+			<a href="###">相关文件</a>
+			<a href="###">借款协议</a>
+		</div>
+		<h3>借款描述</h3>
+		<p>借款企业主营塑料制品及机械设备等制造,加工,销售。该企业经营年限较长，经营状况较为稳定，有一定存货。该企业名下有土地价值500万元，土地证等证件齐全，低山古建筑已建筑完毕。</p>
+		<h3>资金用途</h3>
+		<p>融资资金主要用于矿大经营。</p>
+		<h3>还款来源</h3>
+		<p>企业经营利润。</p>
+		<h3>保证情况说明</h3>
+		<p>房产和车产</p>
+		<h3>负责说明</h3>
+		<p>索星金服及其合作机构将始终秉持客观公正的原则，严控风险，最大程度的尽力确保借入者信息的真实性，但不保证审核信息100%无误。</p>
+	</div>
+	<script src="../js/lib/zepto.min.js" ></script>
+	<script src="../js/lib/touch.js"></script>
+	<script src="../js/public.js"></script>
+	</body>
+</html>

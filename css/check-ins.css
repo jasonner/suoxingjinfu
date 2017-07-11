@@ -1,0 +1,230 @@
+.register_header{
+	width: 100%;
+	height: 0.94rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left:0.5rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 签到*/
+.nav{
+	height: 3rem;
+	padding: 0.3rem 0.4rem;
+    background: -moz-linear-gradient(top,  #2cc9ff 0%, #3693e0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2cc9ff), color-stop(100%,#3693e0));
+    background: -webkit-linear-gradient(top,  #2cc9ff 0%,#3693e0 100%);
+    background: -o-linear-gradient(top,  #2cc9ff 0%,#3693e0 100%);
+    background: -ms-linear-gradient(top,  #2cc9ff 0%,#3693e0 100%);
+    background: linear-gradient(to bottom,  #2cc9ff 0%,#3693e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2cc9ff', endColorstr='#3693e0',GradientType=0 );
+}
+.check_day{
+	width: 1.66rem;
+	height: 1.28rem;
+	margin: 0 auto;
+	background: #ecf9ff;
+	border-radius: 100%;
+	border: 0.2rem solid #6fcdff;
+	text-align: center;
+	padding-top: 0.38rem;
+	margin-bottom: 0.26rem;
+	background: -webkit-linear-gradient(top, #fff , #d7f1fe); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom, #fff, #d7f1fe); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom, #fff, #d7f1fe); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom, #fff, #d7f1fe); /* 标准的语法 */
+}
+.check_day_p1{
+	font-size: 0.45rem;
+	color: #3a94e0;
+}
+.check_day_p2{
+	font-size: 0.20rem;
+	color: #666;
+}
+.myIntegral{
+	text-align: center;
+	display: flex;
+}
+.myIntegral p{
+	flex: 1;
+	flex-flow:wrap;
+	width: 2.76rem;
+	height: 0.6rem;
+	background: #49b2f4;
+	font-size: 0.28rem;
+	color: #fff;
+	line-height: 0.6rem;
+	border-radius: 0.5rem;
+}
+.myIntegral_p1{
+	margin-right: 1.46rem;
+}
+.myIntegral_p2 span{
+	margin: 0 0.12rem;
+}
+/*
+ * datalist*/
+.datalist{
+	font-size: 0.24rem;
+	background: #fff;
+}
+.datalist p{
+	width: 91%;
+	height: 0.88rem;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 0.88rem;
+	border-bottom: 0.01rem solid #DFDFDF;
+}
+.datalist p span:nth-of-type(1){
+	margin-left: 1rem;
+}
+.datalist p i{
+	margin: 0 0.3rem;
+}
+.datalist p a{
+	float: right;
+	font-size: 0.24rem;
+	color: #666;
+	text-decoration: underline;
+}
+.getDate{
+	width: 100%;
+	height: 1.96rem;
+	background: #fff;
+	display: flex;
+	overflow: hidden;
+}
+.getDate dl{
+	flex: 1;
+	text-align: center;
+	padding-left: 0.3rem;
+}
+.getDate dl dt{
+	width: 0.78rem;
+	height: 0.78rem;
+	font-size: 0.24rem;
+	color: #3793e0;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 0.78rem;
+	margin-top: 0.3rem;
+	border: 0.01rem solid #469ae0;
+}
+.getDate dl dd{
+	margin-top: 0.22rem;
+	font-size: 0.22rem;
+	color: #999;
+}
+.getDate .Today dt{
+	background: #e6f4ff;
+}
+.getDate .Today dd{
+	color: #3692dc;
+}
+.getDate .checked_in dt{
+	background: #e6f4ff;
+}
+.getDate .noSignIn dt{
+	background: #f1f1f1;
+	color: #c4c4c4;
+	border: 0.01rem solid #c8c8c8;
+}
+/*
+ 
+ * 前往积分商城*/
+.goIntegralShop{
+	width: 100%;
+	text-align: center;
+	color: #3894e1;
+	background: #fff;
+	margin-top: 0.1rem;
+	height:1.02rem;
+}
+.goIntegralShop a{
+	font-size: 0.28rem;
+	vertical-align: top;
+	line-height: 1.02rem;
+	color: #3793e0;
+}
+/*
+ 
+ * 优惠券*/
+.discountCoupon{
+	margin-top: 0.1rem;
+	background: #fff;
+	overflow: hidden;
+}
+.discountCoupon dl{
+	float: left;
+	width:3.42rem;
+	background: #f9fdff;
+	font-size: 0.16rem;
+	margin: 0.16rem;
+}
+.discountCoupon dl dt{
+	height: 1.82rem;
+	border-left: 0.04rem solid #77c1fe;
+	border-right: 0.04rem solid #77c1fe;
+	border-top: 0.04rem solid #77c1fe;
+	text-align: center;
+	border-bottom: 0.04rem dashed #77c1fe3;
+	-webkit-border-top-left-radius: 0.2rem;
+	-webkit-border-top-right-radius: 0.2rem;
+	-webkit-border-bottom-left-radius: 0.3rem;
+	-webkit-border-bottom-right-radius: 0.3rem;
+}
+.discountCoupon dl dt p span{
+	font-size: 0.3rem;
+	font-weight: 600;
+	margin-right: 0.1rem;
+}
+.discountCoupon dl dt p:nth-of-type(1){
+	margin-top: 0.28rem;
+}
+.discountCoupon dl dt p:nth-of-type(2){
+	margin-top: 0.36rem;
+}
+.discountCoupon dl dt p i{
+	font-size: 0.18rem;
+	font-weight: 600;
+}
+.discountCoupon dl dd{
+	width: 3.14rem;
+	height: 0.86rem;
+	padding: 0.1rem;
+	margin-top: 0.01rem;
+	line-height: 0.86rem;
+	text-align: center;
+	border-left: 0.04rem solid #77c1fe;
+	border-right: 0.04rem solid #77c1fe;
+	border-bottom: 0.04rem solid #77c1fe;
+	border-top: 0.04rem dashed #77c1fe;
+	-webkit-border-top-left-radius: 0.3rem;
+	-webkit-border-top-right-radius: 0.3rem;
+	-webkit-border-bottom-left-radius: 0.2rem;
+	-webkit-border-bottom-right-radius: 0.2rem;
+}
+.discountCoupon dl dd p{
+	width: 2.2rem;
+	height: 0.52rem;
+	margin: 0 auto;
+	background: #3793e0;
+	line-height: 0.6rem;
+	margin-top: 0.12rem;
+	border-radius: 0.2rem;
+	color: #fff;
+}

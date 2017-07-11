@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录与注册详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/RegisterAndLoginDetails.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script>
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		<div class="myreward_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>注册与登录</div>
+		</div>
+		<!--如何注册-->
+		<div class="HowRegister">
+			<div class="HowRegister_div1">
+				<span class="iconfont icon-yiwen"></span>如何在索星金服进行注册？
+			</div>
+			<p>进入网站首页点击“注册”，按照网站注册指引流程完</p>
+			<p>成手机绑定、实名认证、银行卡绑定后即完成注册。</p>
+			<p class="attention">注意：注册需要手机号、身份证、银行卡为同一用户。</p>
+		</div>
+		<div class="HowRegister">
+			<div class="HowRegister_div1">
+				<span class="iconfont icon-yiwen"></span>实名认证无法通过怎么办？
+			</div>
+			<p>索星金服实名认证与通过国政通系统进行认证，如果</p>
+			<p>姓名和身份证号码信息不一致，就会导致无法通过。</p>
+			<p>以下几种情况，将无法自行完成实名认证:</p>
+			<p>1.名字带有繁体字</p>
+			<p>2.曾经改过名字</p>
+			<p>3.军人转业、复员换的身份证</p>
+			<p>4.做过户籍变动</p>
+		</div>
+		<div class="HowRegister">
+			<div class="HowRegister_div1">
+				<span class="iconfont icon-dengpao"></span>
+				解决办法:
+			</div>
+			<p>1.发送本人身份证正反面照片，本人手持身份证正反面</p>
+			<p>照片，户口本首页，户口本页，本人页照片，并注明本</p>
+			<p>人姓名，发到客户服邮箱kufu@suoxingfax.com,收到</p>
+			<p>邮件后我们会提交后台审核认证，认证完成后给用户</p>
+			<p>回邮件。</p>
+			<p>2.有问题可致电客服:4000-211-997.周一至周日</p>
+			<p>,9:00-18:00(法定节假日除外)。</p>
+			<p>3.索星金服将妥善保管您的信息。</p>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+	</body>
+</html>

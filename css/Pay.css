@@ -1,0 +1,123 @@
+.pay_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.pay_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ *chinaBlankCard */
+.chinaBlankCard_box{
+	width: 100%;
+	height: 3.28rem;
+	background: #fff;
+	margin-top: 0.2rem;
+	color: #fefefe;
+	padding-top: 0.34rem;
+}
+.chinaBlankCard{
+	width: 80%;
+	margin:0 auto;
+	height: 2.30rem;
+	padding-top: 0.5rem;
+	border-radius: 0.1rem;
+ 	-webkit-box-shadow:3px 3px 3px #cde2ff;  
+  	-moz-box-shadow:3px 3px 3px #cde2ff;  
+ 	box-shadow:3px 3px 3px #cde2ff;  
+	background: -webkit-linear-gradient(left top, #3e99e2, #5dbcf6,#46b0ec); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right, #3e99e2, #5dbcf6,#46b0ec); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right,#3e99e2, #5dbcf6,#46b0ec); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, #3e99e2, #5dbcf6,#46b0ec); /* 标准的语法 */
+}
+.chinaBlankCard dl dt{
+	font-size: 0.34rem;
+	margin-bottom: 0.13rem;
+	margin-left: 1rem;
+}
+.chinaBlankCard dl dt span{
+	font-size: 0.40rem;
+	margin-right: 0.2rem;
+	color: #fff;
+}
+.chinaBlankCard dl dd{
+	text-align: center;
+}
+.chinaBlankCard dl dd p:nth-of-type(1){
+	font-size: 0.24rem;
+}
+.chinaBlankCard dl dd p:nth-of-type(2){
+	font-size: 0.30rem;
+	margin-top: 0.72rem;
+}
+/*
+ 
+ * 充值金额*/
+.credit_box{
+	height: 2.0rem;
+	width: 100%;
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.credit_box div{
+	width: 92.4%;
+	height: 1.0rem;
+	margin: 0 auto;
+	font-size: 0.28rem;
+	color: #666666;
+}
+.credit_box div:nth-of-type(1){
+	border-bottom: 0.01rem solid #dfdfdf;
+}
+.credit input{
+	line-height:1rem;
+	margin-left: 0.72rem;
+	border: 0;
+	height: 1rem;
+	font-size: 0.28rem;
+}
+.Cvercode input{
+	margin-left: 0.46rem;
+	border: 0;
+	height: 0.99rem;
+	font-size: 0.28rem;
+}
+.Cvercode span{
+	width: 1.50rem;
+	height: 0.56rem;
+	background: #fff;
+	border: 0.01rem solid #52a1e4;
+	border-radius: 0.1rem;
+	font-size: 0.24rem;
+	display: inline-block;
+	line-height: 0.56rem;
+	text-align: center;
+	color: #5ea9ea;
+} 
+/*
+ 
+ * 立即充值*/
+.Prepaid{
+	width: 92%;
+	height: .9rem;
+	margin: 0 auto;
+	margin-top: 0.7rem;
+	background: #3793e0;
+	line-height:0.9rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #feffff;
+	border-radius: 0.1rem;
+}

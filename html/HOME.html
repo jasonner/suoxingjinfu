@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>关于我们</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/HOME.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script>
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		
+		<div class="myreward_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>关于我们</div>
+		</div>
+		<div class="home_content">
+			<p class="home_content_p1"><img src="../img/logo.jpg"/></p>
+			<p class="home_content_p2">V1.0</p>
+			<p class="home_content_p3">
+				索新金服是一家新兴的国资控股互联网金融信息中介平台，由索星(深圳)
+				电子网络科技有限公司主体运营。平台总部位于深圳，运营中心设立在天津。
+				公司创始人及核心团队均来自大型国有投资、控股、金融集团，世界五百强
+				大型跨国公司及传统银行、保理、担保等专业金融机构。依托珠三角和环渤海
+				经济圈的先天优势，伴随京津冀一体化的战略布局，在优质资产整合、不良资产
+				处置、风险控制等方面，拥有非常专业的大型债权投资组合及风险管理经验和完
+				备的金融服务运营体系。
+			</p>
+			<p  class="home_content_p4">
+				索星金服在平台成立伊始即完全按照监管部门的要求做到透明合规，并且希望
+				通过一系列安全透明、信息披露和多样化的理财服务，来为大众投资者提供更
+				好的生活品质。索星金服未来的主要服务对象是中小微企业，通过我们的不懈
+				努力，势必会在一定程度上，帮助这些在传统金融机构无法享受金融服务的主体
+				解决资金需求，并在推进普惠金融的道路上发挥积极作用。索星金服未来会逐步
+				扩展消费金融、科创扶持、投贷联动多维度服务理念，通过构建多维度的服务场
+				景，发展场景化金融来切实提高金融服务水平。
+			</p>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+	</body>
+</html>

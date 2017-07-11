@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>列表详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font1/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/listDetail.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script type="text/javascript">
+					(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);
+		</script>
+		<div class="register_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>新手专享</div>
+		</div>
+		<!--企业贷款-->
+	    <div class="news">
+	    	<p>企业贷款001</p>
+	    	<p>年化利率</p>
+	    	<p>12.45<span>%</span></p>
+	    	<div class="day-money">
+	    		<dl>
+	    			<dt class="money-number"><span >968,980</span>元</dt>
+	    			<dd class="money_msg">剩余金额</dd>
+	    		</dl>
+	    		<dl>
+	    			<dt class="money-number"><span >3</span>个月</dt>
+	    			<dd class="money_msg">投资期限</dd>
+	    		</dl>
+	    		<dl>
+	    			<dt class="money-number"><span >100</span>元</dt>
+	    			<dd class="money_msg">起投金额</dd>
+	    		</dl>
+	    	</div>
+	    </div>
+	    <!--次日计息-->
+	    <div class="Bearing_tom_box">
+	    	<p>次日计息</p>
+	    	<div class="Bearing_tom">
+		    	<dl>
+		    		<dt class="iconfont icon-touzichenggong"><span id="bg-line"></span></dt>
+		    		<dd>募集期</dd>
+		    	</dl>
+		    	<dl>
+		    		<dt class="iconfont icon-touzichenggong"><span  id="bg-line"></span></dt>
+		    		<dd>已标满</dd>
+		    	</dl>
+		    	<dl>
+		    		<dt class="iconfont icon-gengduo" style="border: 0.01rem solid #5AA8E8; font-size: 0.2rem;"><span></span></dt>
+		    		<dd>收益中</dd>
+		    	</dl>
+		    	<dl>
+		    		<dt style="border: 0.01rem solid #d2d2d2"></dt>
+		    		<dd>已还款</dd>
+		    	</dl>
+	    	</div>
+	    	<div class="list_data">
+	    		<p>2017-05-12</p>
+	    		<p>2017-08-12</p>
+	    	</div>
+	    </div>
+	    <!--项目规模-->
+	   	<div class="project_box">
+	   		<div class="project_scale">项目规模<i>1,100,100</i><span>元</span></div>
+	    	<div class="time_left">剩余时间<i>2天23小时12分</i></div>
+	   		<div class="Monthly_payments">还款方式<i>每月付息</i></div>
+	   	</div>
+	   	<!--协议范本-->
+	   	<div class="modelAgreement">
+	   		<dl id="protocol">
+	   			<dt class="iconfont icon-xieyifanben"></dt>
+	   			<dd>协议范本</dd>
+	   		</dl>
+	   		<dl>
+	   			<dt class="iconfont icon-jiekuanqiyexinxi"></dt>
+	   			<dd>借款企业信息</dd>
+	   		</dl>
+	   		<dl>
+	   			<dt class="iconfont icon-toubiaojilu"></dt>
+	   			<dd>投标记录</dd>
+	   		</dl>
+	   	</div>
+	   	<!--风险协议-->
+	   	<div class="risk_agreement">
+	   		<p>市场有风险，投资需谨慎，投资即表示同意</p>
+	   		<p>《XXXX服务协议》</p>
+	   	</div>
+	   	<!--马上投资-->
+	   	<div class="Prepaid" id="Prepaid">
+			马上投资
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+		<script type="text/javascript" src="../js/listDetail.js"></script>
+	</body>
+</html>

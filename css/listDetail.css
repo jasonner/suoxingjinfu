@@ -1,0 +1,218 @@
+.register_header{
+	width: 100%;
+	height: 0.84rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+}
+.register_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:0.7rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*news*/
+.news{
+	width: 100%;
+	background-color:#fff;
+	color: #fff;
+	padding: 0.3rem 0;
+	border-top: 0.01rem solid #dfdfdf;	
+	text-align: center;
+	
+}
+.news p:nth-of-type(1){
+	font-size: 0.3rem;
+	color: #333;
+}
+.news p:nth-of-type(2){
+	font-size: .26rem;
+	color: #999;
+	margin-top: 0.58rem;
+}
+.news p:nth-of-type(3){
+	font-size:0.8rem;
+	color: #ED3753;
+	margin-top: 0.3rem;
+}
+.news p:nth-of-type(3) span{
+	font-size: 0.4rem;
+}
+.day-money{
+	display: flex;
+}
+.day-money dl{
+	flex: 1;
+	text-align: center;
+	margin-top: 0.75rem;
+}
+.money-number{
+	font-size: 0.22rem;
+	color: #999;
+}
+.money-number span{
+	font-size: 0.30rem;
+	color: #666;
+	font-weight: bold;
+}
+
+.money_msg{
+	font-size: 0.2rem;
+}
+.money_msg{
+	font-size: 0.24rem;
+	color: #adadad;
+	margin-top: .18rem;
+}
+/*Bearing_tom 次日计息*/
+.Bearing_tom_box{
+	width: 100%;
+	background: #fff;
+	margin-top: 0.2rem;
+	padding: 0.28rem 0;
+}
+.Bearing_tom_box p{
+	font-size: 0.24rem;
+	text-align: center;
+	color: #71bdf1;
+}
+.Bearing_tom{
+	display: flex;
+}
+.Bearing_tom dl{
+	flex: 1;
+	text-align: center;
+}
+.Bearing_tom dl dt{
+	flex: 1;
+	width: 0.34rem;
+	height: 0.34rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 0.34rem;
+	color: #71bdf1;
+	margin: 0 auto;
+	position: relative;
+}
+.Bearing_tom dl dt span{
+	width: 1.4rem;
+	height: 0.05rem;
+	background: #5AA8E8;
+	position: absolute;
+	top: 0.16rem;
+	left: 0.42rem;
+	
+}
+.Bearing_tom dl dd{
+	font-size: 0.22rem;
+	margin-top: 0.20rem;
+}
+.Bearing_tom p{
+	font-size: 0.24rem;
+	float: left;
+}
+.list_data{
+	display: flex;
+}
+.list_data p{
+	flex: 1;
+	font-size: 0.16rem;
+	color: #666;
+	margin-top: 0.2rem;
+	text-align: right;
+	margin-right: 0.45rem;
+}
+/*
+ 
+ * 项目规模*/
+.project_box{
+	width: 100%;
+	height: 2.70rem;
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.project_box div{
+	font-size: 0.26rem;
+	color: #666;
+	height: 0.89rem;
+	padding-left: 0.32rem;
+	line-height: 0.89rem;
+	border-bottom: 0.01rem solid #dfdfdf;
+}
+.project_box div i{
+	margin-left: 0.4rem;
+	color: #000;
+}
+.project_box div span{
+	color: #000;
+}
+/*
+ 
+ * 协议范本*/
+.modelAgreement{
+	width: 100%;
+	height: 2.0rem;
+	background: #fff;
+	display: flex;
+	margin-top: 0.2rem;
+}
+.modelAgreement dl{
+	flex: 1;
+	font-size: 0.24rem;
+	color: #a9a9a9;
+	text-align: center;
+	margin-top: 0.42rem;
+}
+.modelAgreement dl dt{
+	color: #a9a9a9;
+	font-size: 0.4rem;
+	width: 0.68rem;
+	height: 0.7rem;
+	border:0.01rem solid #999;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 0.7rem;
+	margin-left: 0.94rem;
+}
+.modelAgreement dl dd{
+	margin-top: 0.2rem;
+}
+.risk_agreement{
+	width: 100%;
+	height: 1.72rem;
+	color: #b8b8b8;
+	font-size: 0.24rem;
+	text-align: center;
+}
+.risk_agreement p:nth-of-type(1){
+	margin-top: 0.44rem;
+}
+.risk_agreement p:nth-of-type(2){
+	margin-top: 0.22rem;
+}
+/*
+ * 马上投资*/
+.rightGO{
+	width: 100%;
+	height:0.9rem;
+	background: #3793e0;
+	text-align: center;
+}
+.Prepaid{
+	width: 100%;
+	height: .9rem;
+	margin: 0 auto;
+	margin-top: 0.7rem;
+	background: #3793e0;
+	line-height:0.9rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #feffff;
+	border-radius: 0.1rem;
+}

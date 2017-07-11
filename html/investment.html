@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>投资项目</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/investment.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script>
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		<!--投资项目-->
+		<div class="vest-header">
+			<div>投资项目</div>
+			<div class="iconfont icon-cust"></div>
+		</div>
+		<!--星享单标-->
+		<div class="single-labeled">
+			<a href="listDetail.html">
+				<div class="single-labeled-top">
+					<p>星享单标1 <span>投标中</span><span>新手</span></p>
+					<p class="residual_amount"><span >剩余金额</span><i>122,324</i>元</p>
+				</div>
+				<div class="single-labeled-bom">
+					<div class="rate">
+						<p>11<span>%</span></p>
+						<p>年华利率</p>
+					</div>
+					<div class="Horizon">
+						<p>1<span>个月</span></p>
+						<p>投资期限</p>
+					</div>
+					<div class="rush_pic">
+						<p>抢购</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="single-labeled">
+			<a href="listDetail.html">
+				<div class="single-labeled-top">
+					<p>星享单标3 <span>投标中</span></p>
+					<p class="residual_amount"><span >剩余金额</span><i>122,324</i>元</p>
+				</div>
+				<div class="single-labeled-bom">
+					<div class="rate">
+						<p>12<span>%</span></p>
+						<p>年华利率</p>
+					</div>
+					<div class="Horizon">
+						<p>3<span>个月</span></p>
+						<p>投资期限</p>
+					</div>
+					<div class="rush_pic">
+						<p>抢购</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="single-labeled">
+			<a href="listDetail.html">
+				<div class="single-labeled-top">
+					<p class="Pre-release">星享单标3 <span style="color: #999;border-color: #999;">预发布</span><span style="color: #ffb514; border-color: #ffb514;">奖励</span></p>
+					<p class="residual_amount"><span >剩余金额</span><i>1,000,000</i>元</p>
+				</div>
+				<div class="single-labeled-bom">
+					<div class="rate">
+						<p>11<span>%+1%</span></p>
+						<p>年华利率</p>
+					</div>
+					<div class="Horizon">
+						<p>3<span>个月</span></p>
+						<p>投资期限</p>
+					</div>
+					<div class="rush_pic">
+						<p style="background: #d7d7d7;">即将抢购</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="single-labeled">
+			<a href="listDetail.html">
+				<div class="single-labeled-top">
+					<p class="Pre-release">星享单标3 <span style="color: #ed3753; border-color: #ed3753;">已满标</span><span style="color: #ffb514; border-color: #ffb514;">奖励</span></p>
+					<p class="residual_amount"><span >剩余金额</span><i>1,000,000</i>元</p>
+				</div>
+				<div class="single-labeled-bom">
+					<div class="rate">
+						<p>11<span>%+1%</span></p>
+						<p>年华利率</p>
+					</div>
+					<div class="Horizon">
+						<p>6<span>个月</span></p>
+						<p>投资期限</p>
+					</div>
+					<div class="rush_pic">
+						<p style="background: #d7d7d7;">已完成</p>
+					</div>
+				</div>
+			</a>
+			
+		</div>
+		<!--尾部-->
+		<div class="footer" style="position: fixed; bottom: 0; left: 0;">
+            	<a href="../index.html" class="footer_a">
+               	 	<p class="iconfont icon-shouye-shouye "></p>
+                	<p >首页</p>
+            	</a>
+	            <a href="investment.html" class="footer_a">
+	                <p class="iconfont icon-touzi-icon fontColor"></p>
+	                <p class="fontColor">投资</p>
+		        </a>
+	            <a href="discover.html" class="footer_a">
+	                <p class="iconfont icon-faxian"></p>
+	                <p>发现</p>
+	            </a>
+	            <a href="my.html" class="footer_a">
+	                <p class="iconfont icon-wode "></p>
+	                <p >我的</p>
+	            </a>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>发现</title>
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/discover.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/animate.min.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script type="text/javascript">
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		<!--发现-->		
+		<div class="find-header">
+			<div>发现</div>
+			<div class="iconfont icon-cust"></div>
+		</div>
+		<!--wrape-->
+
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="../img/nav.png"/></div>
+		        <div class="swiper-slide"><img src="../img/nav1.png"/></div>
+		        <div class="swiper-slide"><img src="../img/nav1.png"/></div>
+		    </div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--推广-->
+		<div class="popularize">
+				<dl id="popularize">
+					<dt><a href="###"><img src="../img/tuiguang.png"/></a></dt>
+					<dd>
+						<p class="popularize_p1">推广有奖 <span class="iconfont icon-dayu-gengduo"></span></p>
+						<p class="popularize_p2">现金红包奖励</p>
+					</dd>
+				</dl>
+				<dl id="integral">
+					<dt><img src="../img/jifen.png"/></dt>
+					<dd>
+						<p class="popularize_p1">积分商城<span class="iconfont icon-dayu-gengduo"></span></p>
+						<p class="popularize_p2">现有<span>10020</span>积分</p>
+					</dd>
+				</dl>
+		</div>
+		<!--数据列表-->
+		<div class="ListTag">
+			<dl>
+				<dt class="ListTag_dt0"></dt>
+				<dd>签到</dd>
+			</dl>
+			<dl>
+				<dt class="ListTag_dt1"></dt>
+				<dd>运营数据</dd>
+			</dl>
+			<dl id="get_wechat">
+				<dt class="ListTag_dt2"></dt>
+				<dd>关注微信</dd>
+			</dl>
+			<dl id="InformationCenter">
+				<dt class="ListTag_dt3"></dt>
+				<dd>资讯</dd>
+			</dl>
+			<dl id="calculator">
+				<dt class="ListTag_dt4"></dt>
+				<dd>计算器</dd>
+			</dl>
+			<dl id="helpCenter">
+				<dt class="ListTag_dt5"></dt>
+				<dd>帮助中心</dd>
+			</dl>
+		</div>
+		<!--尾部-->
+		<div class="footer" style="margin-top: 2.1rem;">
+            	<a href="../index.html" class="footer_a">
+               	 	<p class="iconfont icon-shouye-shouye "></p>
+                	<p >首页</p>
+            	</a>
+	            <a href="investment.html" class="footer_a">
+	                <p class="iconfont icon-touzi-icon"></p>
+	                <p>投资</p>
+		        </a>
+	            <a href="discover.html" class="footer_a">
+	                <p class="iconfont icon-faxian fontColor"></p>
+	                <p class="fontColor">发现</p>
+	            </a>
+	            <a href="my.html" class="footer_a">
+	                <p class="iconfont icon-wode "></p>
+	                <p >我的</p>
+	            </a>
+		</div>
+			<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+			<script src="../js/discover.js"></script>
+	</body>
+</html>

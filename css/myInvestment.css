@@ -1,0 +1,66 @@
+.myinvestment_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.myinvestment_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+
+/*
+ 
+ * 待收收益*/
+.earnings{
+	width: 100%;
+	height: 2.0rem;
+	background: #3793e0;
+	display: flex;
+}
+.earnings dl{
+	flex: 1;
+	height: 0.82rem;
+	color: #fff;
+	margin-top: 0.6rem;
+	margin-left: 0.3rem;
+}
+.earnings dl:nth-of-type(2){
+	border-left: 1px solid #fff;
+	padding-left: 0.3rem;
+}
+.earnings dl dt{
+	font-size: 0.3rem;
+}
+.earnings dl dd{
+	font-size: 0.26rem;
+	margin-top: 0.1rem;
+}
+/*list nav*/
+.list_nav{
+	width: 100%;
+	height: 0.9rem;
+	display: flex;
+	background: #fff;
+	line-height: 0.9rem;
+}
+.list_nav div {
+	flex: 1;
+	font-size: 0.26rem;
+	text-align: center;
+}
+.list_nav div a{
+	color: #404040;
+}
+.list_nav div:nth-of-type(1) a{
+	color: #3793de;
+}

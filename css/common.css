@@ -1,0 +1,115 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,article,aside,footer,header,hgroup,nav,section,menu {
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: 100%;
+	font-family: "Heiti SC";
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+em,i {
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0;
+}
+input,img {
+	vertical-align: middle;
+}
+article,aside,footer,header,hgroup,nav,section,menu {
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: "";
+}
+html,body {
+	height: 100%;
+	color: #666;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+a,input,textarea {
+	outline: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	font-size: 100px;
+}
+
+body {
+	background: #f7f7f7;
+}
+
+::-webkit-input-placeholder {
+	color: #999;
+}
+
+:-moz-placeholder {
+	color: #999;
+}
+
+::-moz-placeholder {
+	color: #999;
+}
+
+:-ms-input-placeholder {
+	color: #999;
+}
+
+.footer {
+	display: flex;
+	padding-top: .12rem;
+	width: 100%;
+	height: .85rem;
+	border-top: 1px solid #E5E5E5;
+	background: #fff;
+}
+.footer_a {
+	color: #989898;
+	text-align: center;
+	font-size: .2rem;
+	flex: 1;
+}
+.fontColor {
+	color: #69aee5;
+}
+
+/*
+ 
+ * hheader*/
+.myreward_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+	box-shadow: 0.03rem 0.03rem 0.03rem #E5E5E5;
+}
+.myreward_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:0.5rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}

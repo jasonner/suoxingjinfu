@@ -1,0 +1,97 @@
+body{
+	background:#fff;
+}
+.register_header{
+	width: 100%;
+	height: 1.02rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 用户信息*/
+.usermsgbox{
+	height: 5.18rem;
+	width: 100%;
+}
+.usermsgbox div{
+	height: 1.12rem;
+	width: 76.8%;
+	margin: 0 auto;
+	padding-left:0.23rem;
+	border-bottom: 1px solid #DFDFDF;
+	line-height: 1.12rem;
+}
+.usermsgbox div input{
+	border: none;
+	margin-left: 0.6rem;
+	width: 2.8rem;
+	height: 1.12rem;
+	font-size: 0.3rem;
+	color: #999;
+}
+.userPassword p span{
+	margin-left: 1rem;
+	font-size: 0.4rem;
+	color: #999;
+}
+.usermsg p{
+	color: #999;
+	font-size: 0.45rem;
+}
+.usermsg p span{
+	font-size: 0.28rem;
+	color: #2DABF7;
+}
+/*
+ 
+ * 注册*/
+.registerBtn{
+	width: 80%;
+	height: 0.88rem;
+	margin: 0.65rem auto;
+	background: #3793e0;
+	font-size: 0.34rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 0.1rem;
+	line-height: 0.88rem;
+}
+/*
+ 
+ * 协议*/
+.protocol{
+	font-size: 0.26rem;
+	color: #999;
+}
+.protocol a{
+	color: #3793df;
+}
+.protocol p{
+	margin-left: 1.28rem;
+}
+.login{
+	width: 100%;
+	text-align: center;
+}
+.login p{ 
+	font-size: 0.26rem;
+	color: #c3c3c3;
+	margin-top: 0.9rem;
+}
+.login p a{
+	color: #3892e0;
+}

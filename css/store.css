@@ -1,0 +1,140 @@
+.register_header{
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+	box-shadow: 0.03rem 0.1rem 0.1rem #eee;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 商品类别*/
+.list_shop{
+	position: relative;
+	width: 100%;
+	background: #fff;
+	font-size: 0.28rem;
+	border: 0.01rem solid #DFDFDF;
+	border-left: none;
+	border-right: none;
+	color: #333;
+	display: flex;
+	text-align: center;
+}
+.list_shop div{
+	height: 0.9rem;
+	flex: 1;
+}
+.list_shop div:nth-last-of-type(1) p{
+	border: none;
+}
+.list_shop div p{
+	margin-top: 0.4rem;
+	margin-left:0.3rem;
+	height: 0.34rem;
+	border-right: 0.01rem solid #DFDFDF;
+}
+.list_shop div span{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 0.2rem;
+	border-left: 0.09rem solid #fff;
+	border-right: 0.09rem solid #fff;
+	border-top: 0.1rem solid #000000;
+}
+.voucher{
+	width: 100%;
+	background: #fff;
+	margin-top: 0.2rem;
+	box-shadow: 0rem 0.04rem 0.05rem rgba(51,51,51,0.05);
+}
+.voucher dl{
+	padding: 0.27rem 0.3rem;
+	height: 1.68rem;
+}
+.voucher dl dt{
+	float: left;
+	height: 1.7rem;
+	width: 1.7rem;
+	border: 0.01rem solid #DFDFDF;
+	text-align: center;
+	line-height: 1.4rem;
+	margin-right: 0.3rem;
+	border-radius: 0.1rem;
+}
+.voucher dl dt img{
+	width: 1.54rem;
+	height: 0.96rem;
+}
+.voucher_div1{
+	font-size: 0.36rem;
+	color: #333;
+	margin-top: 0.22rem;
+}
+.voucher_div2{
+	font-size: 0.22rem;
+	margin-top: 0.34rem;
+	text-decoration: line-through;
+}
+.voucher_div3{
+	font-size: 0.26rem;
+	color: #eb3657;
+	margin-top: 0.18rem;
+}
+.voucher_div3_span{
+	margin-left:2.35rem;
+	color: #999;"
+}
+.list_cover{
+	position: absolute;
+	left: 0;
+	top: 0.7rem;
+	text-align: center;
+	padding:0 0.3rem;
+	display: none;
+}
+.list_cover div{
+	width: 0;
+	height: 0;
+	margin: 0 auto;
+	border-bottom: 0.28rem solid #525252;
+	border-left: 0.2rem solid #fff;
+	border-right: 0.2rem solid #fff;
+	opacity: 0.9;
+}
+.list_cover ul{
+	width: 3.18rem;
+	height: 3.38rem;
+	opacity: 0.7;
+	background: #000;
+	padding-top: 0.18rem;
+	border-radius: 0.1rem;
+}
+.list_cover ul li a {
+	color: #fff;
+}
+.list_cover ul li{
+	width: 3.02rem;
+	height: 0.76rem;
+	line-height: 0.76rem;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 0.1rem;
+	z-index:-100;
+}
+.list_cover ul li:hover{
+	background: #6a6a6a;
+}

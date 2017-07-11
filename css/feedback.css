@@ -1,0 +1,72 @@
+.register_header{
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.36rem;
+	line-height: 0.93rem;
+	box-shadow: 0.03rem 0.03rem 0.03rem #E5E5E5;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}/*
+  * 
+  * 意见反馈*/
+textarea{
+	width: 6.9rem;
+ 	height: 3rem;
+ 	background: #fff;
+ 	margin-top: 0.2rem;
+ 	font-size: 0.26rem;
+ 	line-height: 0.52rem;
+ 	color: #999;
+ 	border: none;
+ 	box-shadow: 0.03rem 0.03rem 0.03rem #E5E5E5;
+	word-break:break-all;
+	padding: 0.3rem;
+ }
+/*
+ 
+ * 联系方式*/
+.contactWay{
+	width: 100%;
+	background: #fff;
+}
+.contactWay p{
+	width: 92%;
+	height: 1rem;
+	font-size: 0.28rem;
+	color: #333;
+	line-height: 1rem;
+	margin: 0 auto;
+}
+.contactWay p input{
+	float: right;
+	color: #999;
+	font-size: 0.26rem;
+	height: 1rem;
+	border: none;
+	text-align: right;
+}
+.contactWay p:nth-of-type(1){
+	border-bottom: 0.01rem solid #dFdfdF;
+}
+.feedback_sure{
+	margin: 0.6rem auto;
+	height: 0.9rem;
+	border-radius: 0.1rem;
+	color: #fff;
+	font-size: 0.36rem;
+	background: #3793e0;
+	width: 92%;
+	line-height: 0.9rem;
+	text-align: center;
+}

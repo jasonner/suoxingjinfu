@@ -1,0 +1,73 @@
+.register_header{
+	width: 100%;
+	height: 0.94rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.36rem;
+	line-height: 0.93rem;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left: 0.5rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+ /* ForSuccessful*/
+.ForSuccessful{
+	width: 100%;
+	height:5.32rem;
+	background: #fff;
+	margin-top: 0.2rem;
+	font-weight: 600;
+	padding-top: 0.68rem;
+	box-shadow: 2px 4px 6px #eeeeee;
+}
+.duihao{
+	width: 0.9rem;
+	height: 0.9rem;
+	border: 0.1rem solid #88beec;
+	position: relative;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.duihao span{
+	position: absolute;
+	left: 0.05rem;
+	top: 0.05rem;
+	color: #3793e0;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.qiangGo{
+	font-size: 0.26rem;
+	color: #333;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+.qiangGoMoney{
+	font-size: 0.27rem;
+	color: #333;
+	margin-top: 0.22rem;
+	text-align: center;
+}
+.qiangGoMoney span{
+	color:#ee3753;
+}
+
+.goText{
+	width: 92%;
+	height: 0.9rem;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 0.9rem;
+	font-size: 0.3rem;
+	margin-top: 1.50rem;
+	background: #3793e0;
+	color: #fff;
+	border-radius: 0.1rem;
+}

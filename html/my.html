@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font1/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/my.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script>
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		<div class="my_header">
+			<div class="my_header_top">
+				<div class="userlogo">
+					<span id="user_self"><img src="../img/suoxinglogo.png"/></span>
+					<i>136****6619</i>
+				</div>
+				
+				<div class="reset_kufu">
+					<span id="reset" class="iconfont icon-set"></span>
+					<i id="kefu" class="iconfont icon-cust"></i>
+				</div>
+			</div>
+			<div class="user_money">
+				<p>8,458,123.00</p>
+				<p>资产总额（元）</p>
+			</div>
+		</div>	
+			<!--可用余额-->
+		<div class="ccye_list1">
+			<dl>
+				<dt class="ccye_list1_dt1">
+					<img src="../img/qiandai.png"/>
+				</dt>
+				<dd class="ccye_list1_dd1">
+					<p>58,123</p>
+					<p>可用余额(元)</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="ccye_list1_dt2">提现</dt>
+				<dd class="ccye_list1_dd2">充值</dd>
+			</dl>	
+		</div>
+		<!--定期-->
+		<div class="ccye_list2">
+			<div class="ccye_list2_div1">
+				<span><img src="../img/dingshi.png"/></span>
+				<i>定期<i>
+			</div>
+			<div class="ccye_list2_div2"> 
+				待收&nbsp;:<span>12.3</span><i class="iconfont icon-dayu-gengduo greater-than"></i>
+			</div>
+		</div>
+		<!--我的奖励-->
+		<div class="ccye_list3">
+			<div class="ccye_list3_div1">
+				<em class="iconfont icon-wodejiangli"></em>
+				<i>我的奖励<i>
+			</div>
+			<div class="ccye_list3_div2"> 
+				<i class="iconfont icon-dayu-gengduo greater-than"></i>
+			</div>
+		</div>
+		<!--交易记录-->
+		<div class="ccye_list3">
+			<div class="ccye_list3_div1">
+				<em class="iconfont icon-jiaoyijilu"></em>
+				<i>交易记录<i>
+			</div>
+			<div class="ccye_list3_div2"> 
+				<i class="iconfont icon-dayu-gengduo greater-than"></i>
+			</div>
+		</div>
+		<!--借款负债-->
+		<div class="ccye_list4  borrowing">
+			<div class="ccye_list4_div1">
+				<em class="iconfont icon-jiekuanfuzhai"></em>
+				<i>借款负债<i>
+			</div>
+			<div class="ccye_list4_div2"> 
+				<span>24,173</span><i></i>
+			</div>
+		</div>
+		<p style="width: 92%;margin: 0 auto; height: 1px;background:#dfdfdf;"></p>
+		<!--我的借款-->
+		<div class="ccye_list4">
+			<div class="ccye_list4_div1">
+				<em class="iconfont icon-jiekuanjiekuan"></em>
+				<i>我的借款<i>
+			</div>
+			<div class="ccye_list4_div2"> 
+				<span>24,173</span><i class="iconfont icon-dayu-gengduo greater-than"></i>
+			</div>
+		</div>
+		<!--我的商城-->
+		<div class="ccye_list3" id="goshop">
+			<div class="ccye_list3_div1">
+				<em class="iconfont icon-wodeshangcheng"></em>
+				<i>我的商城<i>
+			</div>
+			<div class="ccye_list3_div2"> 
+				<i class="iconfont icon-dayu-gengduo greater-than"></i>
+			</div>
+		</div>
+		<!--结尾-->
+		<div class="footer" style="position: fixed; bottom: 0; left: 0;">
+            	<a href="../index.html" class="footer_a">
+               	 	<p class="iconfont icon-shouye-shouye "></p>
+                	<p >首页</p>
+            	</a>
+	            <a href="investment.html" class="footer_a">
+	                <p class="iconfont icon-touzi-icon"></p>
+	                <p>投资</p>
+		        </a>
+	            <a href="discover.html" class="footer_a">
+	                <p class="iconfont icon-faxian"></p>
+	                <p>发现</p>
+	            </a>
+	            <a href="my.html" class="footer_a">
+	                <p class="iconfont icon-wode fontColor"></p>
+	                <p class="fontColor">我的</p>
+	            </a>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+		<script src="../js/my.js"></script>
+	</body>
+</html>

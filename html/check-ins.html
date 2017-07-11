@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />	
+		<title>签到</title>
+		<link rel="stylesheet" href="../css/common.css"/>
+		<link rel="stylesheet" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" href="../css/check-ins.css" />
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script>
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		<header class="register_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>签到兑好礼</div>
+		</header>
+		<nav class="nav">
+			<div class="check_day">
+				<p class="check_day_p1">1</p>
+				<p class="check_day_p2">今日已签到</p>
+			</div>
+			<div class="myIntegral">
+				<p class="myIntegral_p1">我的积分<span>10202</span>分</p>
+				<p class="myIntegral_p2">连续签到<span>1</span>天</p>
+			</div>
+		</nav>
+		<aside class="datalist">
+			<p><span><</span><i>2017年6月</i><span>></span><a href="###">签到规则</a></p>
+		</aside>
+		<div class="getDate">
+			<dl class="checked_in">
+				<dt>+1</dt>
+				<dd>7.1</dd>
+			</dl>
+			<dl  class="checked_in">
+				<dt>+1</dt>
+				<dd>7.2</dd>
+			</dl>
+			<dl class="noSignIn">
+				<dt>+0</dt>
+				<dd>7.3</dd>
+			</dl>
+			<dl class="Today">
+				<dt >+1</dt>
+				<dd >今日</dd>
+			</dl>
+			<dl class="next_day">
+				<dt>+0</dt>
+				<dd>7.5</dd>
+			</dl>
+			<dl class="next_day">
+				<dt >+0</dt>
+				<dd>7.1</dd>
+			</dl>
+			<dl class="next_day">
+				<dt>+0</dt>
+				<dd>7.6</dd>
+			</dl>
+		</div>
+		<!--积分商城-->
+		<div id="" class="goIntegralShop">
+			<a href="###">前往积分商城</a>
+		</div>
+		<!--优惠券-->
+		<footer class="discountCoupon">
+			<dl>
+				<dt>
+					<p><i>￥</i><span>20</span>投资满10000元使用</p>
+					<p>投资满10000元抵扣20</p>
+				</dt>
+				<dd>
+					<p>100积分兑换</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<p><i>￥</i><span>20</span>投资满10000元使用</p>
+					<p>投资满10000元抵扣20</p>
+				</dt>
+				<dd>
+					<p>100积分兑换</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<p><i>￥</i><span>20</span>投资满10000元使用</p>
+					<p>投资满10000元抵扣20</p>
+				</dt>
+				<dd>
+					<p>100积分兑换</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<p><i>￥</i><span>20</span>投资满10000元使用</p>
+					<p>投资满10000元抵扣20</p>
+				</dt>
+				<dd>
+					<p>100积分兑换</p>
+				</dd>
+			</dl>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+.myreward_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.myreward_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+
+.bankCardOfchina{
+	width: 100%;
+	height: 1.4rem;
+	background: #fff;
+	margin-top: 0.2rem;
+	font-size: 0.34rem;
+	color: #333;
+	line-height: 1.4rem;
+	box-shadow: 0.03rem 0.05rem 0.03rem #E5E5E5;
+}
+.bankCardOfchina p{
+	padding-left: 0.33rem;
+}
+.bankCardOfchina p span{
+	font-size: 0.58rem;
+	color: #e53c25;
+	margin-right: 0.35rem;
+}

@@ -1,0 +1,57 @@
+.myshop_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.myshop_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 我的积分*/
+.shop_list{
+	width: 100%;
+	background: #fff;
+}
+.shop_list0{
+	width: 92%;
+	border-bottom: 1px solid #dfdfdf;
+	margin: 0 auto;
+	background: #fff;
+	display: flex;
+}
+.shop_list0 div{
+	flex: 1;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.26rem;
+}
+.shop_list_div1 span{
+	font-size: 0.36rem;
+	color: #999;
+	margin-right: 0.18rem;
+}
+.shop_list_div1 i{
+	font-size: 0.28rem;
+	color: #333;
+}
+.shop_list_div2 span{
+	font-size: 0.22rem;
+	color: #666;
+} 
+.shop_list_div2 i{
+	font-size: 0.24rem;	
+	color: #bcbcbc;
+	margin-left: 0.27rem;
+}

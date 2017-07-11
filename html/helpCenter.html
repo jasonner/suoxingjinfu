@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/helpCenter.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script type="text/javascript">
+					(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);
+		</script>
+		<div class="register_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>帮助中心</div>
+		</div>
+		<!--客服-->
+		<div class="customerService">
+			<dl class="customerService_dl1">
+				<dt class="iconfont icon-zaixiankefu"></dt>
+				<dd><a href="http://wpa.qq.com/msgrd?v=3&uin=2787069420&site=qq&menu=yes"></a>
+					<p><a href="http://wpa.qq.com/msgrd?v=3&uin=2769771479&site=qq&menu=yes">在线客服</a></p>
+					<p><a href="tencent://Message/?Uin=2769771479" data-toggle="tooltip" data-placement="bottom" title="联系客服">一对一专属服务</a></p>
+				</dd>
+			</dl>
+			<dl class="customerService_dl2">
+				<dt class="iconfont icon-phone"></dt>
+				<dd>
+					<p>电话服务</p>
+					<p class="pddh">拨打客服热线</p>
+				</dd>
+			</dl>
+			<div class="cover" style="display: none;">
+				<div class="layer">
+					<div class="title">400-123-123</div>
+					<div class="layer1"><p id="cancel">取消</p><p
+						><a href="tel://17695630310">呼叫</a></p></div>
+				</div>
+			</div>	
+		</div>
+		<!--注册与登录-->
+		<div class="usermsgbox">
+			<span class="iconfont icon-sousuo-sousuo"></span><input type="text" name="" id="" placeholder="请输入查询内容"  />
+		</div>
+		<div class="shop_list">
+			<div class="shop_list0" id="login">
+				<div class="shop_list_div1">
+					<span></span>
+					<i class="login_register">注册与登录<i>
+				</div>
+				
+				<div class="shop_list_div2"> 
+					<i class="iconfont icon-dayu-gengduo"></i>
+				</div>
+			</div>
+		</div>
+		<div class="shop_list">
+			<div class="shop_list0" id="pay_Withdraw">
+				<div class="shop_list_div1">
+					<span></span>
+					<i class="login_register">充值与提现<i>
+				</div>
+				
+				<div class="shop_list_div2"> 
+					<i class="iconfont icon-dayu-gengduo"></i>
+				</div>
+			</div>
+		</div>
+		<div class="shop_list">
+			<div class="shop_list0" id="invest">
+				<div class="shop_list_div1">
+					<span></span>
+					<i class="login_register">投资与回款<i>
+				</div>
+				
+				<div class="shop_list_div2"> 
+					<i class="iconfont icon-dayu-gengduo"></i>
+				</div>
+			</div>
+		</div>
+		<div class="shop_list">
+			<div class="shop_list0" id="PlatformAndWelfare">
+				<div class="shop_list_div1">
+					<span></span>
+					<i>平台福利<i>
+				</div>
+				
+				<div class="shop_list_div2"> 
+					<i class="iconfont icon-dayu-gengduo"></i>
+				</div>
+			</div>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+		<script src="../js/helpCenter.js"></script>
+	</body>
+</html>

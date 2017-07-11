@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>邀请好友</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../node_modules/social-share.js/dist/css/share.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ InviteFriends.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script type="text/javascript">
+					(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);
+		</script>
+		<div class="myreward_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div style="margin-left: 1rem;">发现</div>
+		</div>
+		<nav class="nav_img"><img src="../img/jiangli.png"/></nav>
+		<article class="article">
+			<img src="../img/nav_yaohaoyou.png" />
+		</article>
+		<section class="section">
+			立即邀请，拿奖励
+		</section>
+		<div class="yqgz">
+			<a href="###">
+				<img src="../img/yaoqingguize.png"/>
+			</a>
+		</div>
+		<div class="rule_list">
+			<p class="title"><img src="../img/list_mark.png"/>规则详情<img src="../img/list_mark.png"/></p>
+			<ul class="rule_list_ul">
+				<li>好友投资年化额</li>
+				<li>您的奖金</li>
+				<li>500-4999元</li>
+				<li>30元(可累计获取)</li>
+				<li>5000-9999元</li>
+				<li>50元(可累计获取)</li>
+				<li>10000-49999元</li>
+				<li>100元(可累计获取)</li>
+				<li>5万元以上</li>
+				<li>500元(可累计获取)</li>
+			</ul>
+			<p class="care">注:年化投资额=投资金额*投资期限(月)/12。</p>
+			<p style="margin-top: 0.9rem;" class="title"><img src="../img/list_mark.png"/>举个栗子<img src="../img/list_mark.png"/></p>
+			<ul class="rule_list_ul">
+				<li>好友投资年化额</li>
+				<li>您的奖金</li>
+				<li>500-4999元</li>
+				<li>30元(可累计获取)</li>
+				<li>5000-9999元</li>
+				<li>50元(可累计获取)</li>
+				<li>10000-49999元</li>
+				<li>100元(可累计获取)</li>
+				<li>5万元以上</li>
+				<li>500元(可累计获取)</li>
+			</ul>
+			<h4>活动规则</h4>
+			<div class="rule_time">
+				<p>1、活动时间:2017年6月26日至2017年8月31日;</p>
+				<p>2、本活动活动期间奖励无上限、多邀多得;</p>
+				<p>3、如有疑问请联系在线客服或拨打4000-211-977<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(工作日9:00-18:00);</p>
+				<p>4、本活动规则最终解释权归索星金服所有。</p>
+			</div>
+			<div class="Money_tip">理财有风险,投资需谨慎</div>
+		</div>
+		<div class="share" style="display: none;">
+			<div class="social-share"></div>
+			
+			<p id="abolish">取消</p>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+		<script src="../node_modules/social-share.js/dist/css/social-share.min.js"></script>
+		<script src="../js/InviteFriends.js"></script>
+		<script>
+			socialShare('#share-1');
+			socialShare('#share-2', {sites: ['wechat', 'qq', 'weibo','wechat']});
+			socialShare('#share-3');
+			socialShare('#share-4');
+		</script>
+	</body>
+</html>

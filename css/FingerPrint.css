@@ -1,0 +1,112 @@
+.myreward_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.myreward_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:0.5rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+
+/*
+ 
+ * 
+ * 手势密码*/
+.mui-content{
+	background:#fff;
+	height: 1.05rem;
+	margin-top: 0.2rem;
+	padding-top: 0.35rem;
+	padding-left: 0.3rem;
+}
+.content_left p:nth-of-type(1){
+	color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+.tg-list-item {
+  margin-right: 0.3rem;
+}
+
+.tgl {
+  display: none;
+}
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+  box-sizing: border-box;
+}
+.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+  background: none;
+}
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+  background: none;
+}
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width:1.1rem;
+  height: 0.64em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.tgl + .tgl-btn:after {
+  left: 0;
+}
+.tgl + .tgl-btn:before {
+  display: none;
+}
+.tgl:checked + .tgl-btn:after {
+  left: 50%;
+}
+
+.tgl-light + .tgl-btn {
+  background: #f0f0f0; 
+  border-radius: 2em;
+  padding: 2px;
+  float: right;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.tgl-light + .tgl-btn:after {
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+.tgl-light:checked + .tgl-btn {
+  background: #3793e0;
+}
+.content_left{
+	float: left;
+	font-size: 0.28rem;
+}
+.content_left p:nth-of-type(1) span{
+	margin-left: 0.2rem;
+}
+.content_left p:nth-of-type(2){
+	font-size: 0.24rem;
+	color: #999;
+	margin-top: 0.1rem;
+}

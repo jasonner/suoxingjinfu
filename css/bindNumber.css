@@ -1,0 +1,63 @@
+.myreward_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.myreward_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 手机号*/
+.bindEmail{
+	width: 100%;
+	height: 1rem;
+	background: #fff;
+	font-size: 0.3rem;
+	color: #333;
+	margin-top: 0.2rem;
+	line-height: 1rem;
+}
+.bindEmail p{
+	padding: 0 0.32rem;
+}
+.bindEmail p input{
+	float: right;
+	text-align: right;
+	margin-top: 0.37rem;
+	font-size: 0.28rem;
+	color: #999;
+	border: none;
+}
+/*
+ 
+ * 更改手机号*/
+.bindNumber{
+	width: 100%;
+	height: 1rem;
+	background: #fff;
+	font-size: 0.28rem;
+}
+.bindNumber p{
+	width: 92%;
+	border-top: 0.01rem solid #dfdfdf;
+	margin: 0 auto;
+	color: #333;
+	line-height: 1rem;
+}
+.bindNumber p span{
+	float: right;
+	font-size: 0.2rem;
+	color: #999;
+}

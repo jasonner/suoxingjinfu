@@ -1,0 +1,155 @@
+.find-header{
+	width:100%;
+	height: 0.88rem;
+	display: flex;
+	text-align: center;
+	line-height: 0.88rem;
+	background: #fff;
+}
+.find-header div:nth-of-type(1){
+	flex: 6;
+	margin-left: 1rem;
+	font-size: 0.34rem;
+	color: #000;
+}
+.find-header div:nth-of-type(2){
+	flex: 1;
+	font-size: .42rem;
+}
+
+/*swiper*/
+.swiper-container{
+	width: 100%;
+	height: 2.48rem;
+}
+.swiper-slide img{
+	height: 2.48rem;
+	width: 100%;
+}
+/*popularize推广有奖*/
+.popularize{
+	width: 100%;
+	height: 1.96rem;
+	background: #f7f7f7;
+	display: flex;
+}
+.popularize dl{
+	flex: 1;
+	text-align: center;
+	width: 3.48rem;
+	height: 1.23rem;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow:6px 6px 6px #eeeff1 ;
+	line-height: 0.45rem;
+	padding-top: 0.39rem;
+}
+.popularize dl:nth-of-type(1){
+	margin: 0.18rem;
+	margin-right: 0.09rem;
+}
+.popularize dl:nth-of-type(2){
+	margin: 0.18rem;
+	margin-left: 0.09rem;
+}
+.popularize dl dt{
+	float: left;
+	margin-left: 0.3rem;
+}
+.popularize dl dt img{
+	width: .94rem;
+	height: .84rem;
+}
+.popularize_p1{
+	font-size: 0.32rem;
+	color: #222;
+	font-weight: 700;
+}
+.popularize_p1 span{
+	margin-left: 0.25rem;
+	font-size: 0.18rem;
+}
+.popularize_p2{
+	font-size: 0.24rem;
+	color: #999;
+	text-align: center;
+	margin-right: 0.2rem;
+}
+.popularize_p2 span{
+	color: #ed3753;
+}
+/*ListTag*/
+.ListTag{
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	padding-top: 0.42rem;
+}
+.ListTag dl{
+	width: 2.5rem;
+	height: 2.25rem;
+	float: left;
+	text-align: center;
+}
+.ListTag dl dt{
+	width: 1.02rem;
+	height: 1.03rem;
+	border-radius: 50%;
+	font-size: 0.28rem;
+	margin: 0 auto;
+	line-height: 1.04rem;
+}
+.ListTag .ListTag_dt0{
+	background:url(../img/find_img_01.png);
+	background-size:cover;
+}
+.ListTag .ListTag_dt1{
+	background:url(../img/find_img_01.png) -1.03rem 0;
+	background-size:cover;
+}
+.ListTag .ListTag_dt2{
+	background:url(../img/find_img_01.png) -2.06rem 0;
+	background-size:cover;
+}
+.ListTag .ListTag_dt3{
+	background:url(../img/find_img_01.png) -3.08rem 0;
+	background-size:cover;
+}
+.ListTag .ListTag_dt4{
+	background:url(../img/find_img_01.png) -4.12rem 0;
+	background-size:cover;
+}
+.ListTag .ListTag_dt5{
+	background:url(../img/find_img_01.png) -5.22rem 0;
+	background-size:cover;
+}
+.ListTag dl dd{
+	font-size: 0.28rem;
+	margin-top: 0.2rem;
+	color: #333;
+	font-weight: 600;
+}
+.ListTag dl dd p{
+	color: #000;
+	margin-top: 0.24rem;
+} 
+.icon-tubiao11{
+	font-size: 0.46rem;
+	color: #e5fdff;
+}
+.icon-zixun{
+	font-size: 0.52rem;
+	color: #e7fcff;
+}
+.icon-weixin{
+	font-size: 0.46rem;
+	color: #e7fcff;
+}
+.icon-shouyijisuanqi{
+	font-size: 0.42rem;
+	color: #e7fcff;
+}
+.icon-kefu{
+	font-size: 0.42rem;
+	color: #ffd0cb;
+}

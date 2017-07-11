@@ -1,0 +1,54 @@
+.myreward_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.myreward_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 邮箱*/
+.bindEmail{
+	width: 100%;
+	height: 1rem;
+	background: #fff;
+	font-size: 0.3rem;
+	color: #333;
+	margin-top: 0.2rem;
+	line-height: 1rem;
+}
+.bindEmail p{
+	padding: 0 0.32rem;
+}
+.bindEmail p input{
+	float: right;
+	text-align: right;
+	margin-top: 0.37rem;
+	font-size: 0.28rem;
+	color: #999;
+	border: none;
+}
+.emailsed{
+	width: 92%;
+	height: 0.9rem;
+	margin: 0 auto;
+	background: #3793e0;
+	border-radius: 0.1rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.9rem;
+	margin-top: 1.28rem;
+	font-size: 0.32rem;
+}

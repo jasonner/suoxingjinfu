@@ -1,0 +1,43 @@
+.register_header{
+	width: 100%;
+	height: 1.02rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+}
+.register_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+.ccye_list3{
+	height: 1rem;
+	width: 100%;
+	background: #fff;
+	display: flex;
+	margin-top: 0.2rem;
+	font-size: 0.28rem;
+}
+.ccye_list3 div{
+	flex: 1;
+	line-height: 1rem;
+	color: #323232;
+}
+.ccye_list3_div1 em{
+	margin-left: 0.3rem;
+	margin-right: 0.2rem;
+	color: #999;
+}
+.ccye_list3_div2 i{
+	margin-right: 0.35rem;
+}
+.greater-than{
+	font-size: 0.24rem;
+}

@@ -1,0 +1,82 @@
+.myreward_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+	box-shadow: 0.03rem 0.03rem 0.03rem #E5E5E5;
+}
+.myreward_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * 我的积分*/
+.shop_list{
+	width: 100%;
+	background: #fff;
+	border-bottom: 0.01rem solid $#DFDFDF;
+}
+.shop_list0{
+	width: 92%;
+	margin: 0 auto;
+	background: #fff;
+	display: flex;
+	border-bottom: 0.01rem solid #DFDFDF;
+}
+.shop_list0 div{
+	flex: 1;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.26rem;
+}
+.shop_list_div1 span{
+	font-size: 0.28rem;
+	color: #999;
+	margin-right: 0.18rem;
+}
+.shop_list_div1 i{
+	font-size: 0.28rem;
+	color: #333;
+}
+.shop_list_div2 span{
+	font-size: 0.26rem;
+	color: #999;
+} 
+.shop_list_div2 i{
+	font-size: 0.24rem;	
+	color: #bcbcbc;
+	margin-left: 0.27rem;
+}
+.emailsed{
+	width: 92%;
+	height: 0.9rem;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 0.9rem;
+	margin-top: 0.76rem;
+	border-radius: 0.1rem;
+	color: #fff;
+	font-size: 0.34rem;
+	background: #3793e0;
+}
+.returnpsw{
+	width: 92%;
+	margin:0 auto;
+	font-size: 0.28rem;
+	color:#449be2 ;
+	text-align: right;
+	margin-top: 0.4rem;
+}
+.returnpsw a{
+	color: #3693e1;
+}

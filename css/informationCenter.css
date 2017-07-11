@@ -1,0 +1,78 @@
+.register_header{
+	width: 100%;
+	height: 0.94rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+	border-bottom: 0.01rem solid #dfdfdf;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+.investList{
+	width: 100%;
+	height: 0.9rem;
+	background: #fff;
+	font-size: 0.28rem;
+	display: flex;
+	line-height: 0.9rem;
+	text-align: center;
+	border-bottom: 0.01rem solid #dfdfdf;
+}
+.investList div{
+	flex: 1;
+}
+.investList div a{
+	color: #333;
+	
+	padding-bottom: 0.22rem;
+	width: 0.1rem;
+}
+.investList div:nth-of-type(1) a{
+	color: #4399e2;
+	border-bottom: 0.04rem solid #4399e2;
+	border-bottom-style: inset;
+}
+/*
+ 
+ * 列表信息*/
+.title_list{
+	width: 100%;
+	height: 3rem;
+	background: #fff;
+	box-shadow: 2px 4px 6px #eeeeee;
+}
+.title_list dl{
+	height: 1.1rem;
+	border-bottom: 0.01rem solid #DFDFDF;
+	padding-top: 0.4rem;
+	padding-left: 0.3rem;
+}
+.title_list dl dt{
+	float: left;
+}
+.title_list dl dd{
+	float: right;
+	font-size: 0.22rem;
+	color: #9a9a99;
+	margin-right: 0.3rem;
+	line-height: 1rem;
+}
+.titleMsg{
+	font-size: 0.28rem;
+	color: #333;
+}
+.titleDate{
+	color: #999;
+	font-size: 0.18rem;
+	margin-top: 0.22rem;
+}

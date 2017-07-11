@@ -1,0 +1,89 @@
+.register_header{
+	width: 100%;
+	height: 0.94rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+.msgText{
+	width:95%;
+	margin:0 auto;
+	height:11.25rem;
+	background: #fff;
+	padding-top: 0.45rem;
+	margin-top: 0.2rem;
+	position: relative;
+	box-shadow: 0.03rem 0.03rem 0.03rem #DFDFDF;
+}
+.msgText h3{
+	font-size: 0.3rem;
+	color: #333;
+	text-align: center;
+}
+.msgText h4{
+	font-size: 0.28rem;
+	color: #333;
+	margin-left: 0.35rem;
+	margin-top: 0.5rem;
+}
+.How_old1{
+	width: 6.2rem;
+	height: 0.88rem;
+	color: #666666;
+	font-size: 0.24rem;
+	line-height: 0.88rem;
+	border: 0.01rem solid #3894e1;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	padding-left: 0.25rem;	
+}
+.How_old2{
+	width: 6.2rem;
+	height: 0.88rem;
+	color: #666666;
+	font-size: 0.24rem;
+	line-height: 0.88rem;
+	border: 0.01rem solid #dfdfdf;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	padding-left: 0.25rem;	
+}
+.goText{
+	width: 100%;
+	position: absolute;
+	left: 0.11rem;
+	bottom: 0.3rem;
+	display: flex;
+}
+.goText p{
+	flex: 1;
+	margin: 0 0.2rem;
+	font-size: 0.26rem;
+	width: 3.20rem;
+	height: 0.72rem;
+	text-align: center;
+	border-radius: 0.1rem;
+	line-height: 0.72rem;
+}
+.goText p:nth-of-type(1){
+	border: 0.01rem solid #dfdfdf;
+	color: #333;
+}
+.goText p:nth-of-type(2){
+	border: 0.01rem solid #dfdfdf;
+	background: #3793e0;
+	color: #fff;
+	margin-right: 0.42rem;
+}

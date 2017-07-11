@@ -1,0 +1,61 @@
+.myreward_header{
+	width: 100%;
+	height: 0.93rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.32rem;
+	line-height: 0.93rem;
+}
+.myreward_header div:nth-of-type(2){
+	color: #000;
+	flex: 2;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+
+/*
+ 
+ * 关注微信步骤*/
+.fllowWechat{
+	width: 92%;
+	background: #fff;
+	margin: 0 auto;
+	font-size: 0.28rem;
+	margin-top: 0.2rem;
+	border-radius: 0.2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.4rem;
+	box-shadow: 0.03rem 0.1rem  0.03rem #eee;
+}
+.fllowWechat p{
+	padding-left: 0.62rem;
+	padding-right: 1.23rem;
+	line-height: 0.5rem;
+}
+.fllowWechat p img{
+	width: 5.38rem;
+	height: 5.29rem;
+	
+}
+.step2{
+	padding-bottom: 0.7rem;
+}
+.step2 p img{
+	width: 5.54rem;
+	height: 2.23rem;
+}
+.step3 p img{
+	width: 5.18rem;
+	height: 3.31rem;
+}
+.step4{
+	margin-bottom: 2rem;
+}
+.step4 p img{
+	width: 5.18rem;
+	height: 4.71rem;
+}

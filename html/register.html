@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>新手专享</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<link rel="shortcut icon" href="http://www.suoxing.vip/favicon.ico" />
+	</head>
+	<body>
+		<script>
+			(function (doc, win) {
+    // 分辨率Resolution适配
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    
+    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+    (function(){
+        return;
+        var dpr = scale =1;
+         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+           scale = 1 / dpr;
+           
+           // 
+           var metaEl = "";
+           metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    })();
+        
+})(document, window);  
+		</script>
+		<div class="register_header">
+			<div class="iconfont icon-fanhui back"></div>
+			<div>注册</div>
+		</div>
+		<!--用户信息-->
+		<div class="usermsgbox">
+			<div class="userPhoneNum">
+				<p class="icon iconfont icon-iconshouji"><input type="tel" name="" id="userName" placeholder="请输入手机号" /></p>
+			</div>
+			<div class="userPassword">
+				<p class="icon iconfont icon-lock" style="position: relative;">
+					<input name="" type="password" class="input_text_password mima_dd " placeholder="请输入密码" >
+      				<input name="" type="text" class="input_text_password mima_wz" style="display:none;" placeholder="请输入密码" >
+					<a class="eyes_box " data-show="1" href="javascript:void(0);"><span  class="icon iconfont icon-yanjing" id="yanjing"></span></a>
+				</p>
+			</div>
+			<div class="usermsg">
+				<p class="icon iconfont icon-xiaoxi"><input  type="text" name="" placeholder="短信验证码" /><span id="getAuthCode">获取验证码</span></p>
+			</div>
+			<div class=" inviterPhone">
+				<p class="icon iconfont icon-iconshouji"><input type="tel" name="" id="userPasswordSure" placeholder="邀请人手机号(选填)" /></p>
+			</div>
+		</div>
+			
+		<!--注册按钮-->
+		<div class="registerBtn" id="_register">注册</div>
+		<!--协议-->
+		<div class="protocol">
+			<p>注册即表示您已同意书名 <a href="###">《索星金服服务协议》</a></p>
+		</div>
+		<!--登录-->
+		<div class="login">
+			<p>已有账号？<a href="login.html">马上登录</a></p>
+		</div>
+		<script src="../js/lib/zepto.min.js" ></script>
+		<script src="../js/lib/touch.js"></script>
+		<script src="../js/public.js"></script>
+		<script src="../js/register.js"></script>
+	</body>
+</html>	

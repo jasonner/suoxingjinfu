@@ -1,0 +1,61 @@
+.register_header{
+	width: 100%;
+	height: 0.94rem;
+	background: #fff;
+	display: flex;
+	font-size: 0.34rem;
+	line-height: 0.93rem;
+	border-bottom: 0.01rem solid #dfdfdf;
+}
+.register_header div:nth-of-type(2){
+	color: #333;
+	flex: 2;
+	margin-left:1rem;
+}
+.back{
+	flex: 1;
+	margin-left: 0.3rem;
+	color:#666;
+	font-size: 0.38rem;
+}
+/*
+ 
+ * industryNews_msg*/
+.industryNews_msg{
+	width: 100%;
+	height: 9.38rem;
+	background: #fff;
+	margin-top: 0.2rem;
+	padding-top: 0.38rem;
+	box-shadow: 2px 4px 6px #eee;
+}
+.industryNews_msg h3{
+	font-size: 0.3rem;
+	color: #333;
+	text-align: center;
+}
+.industryNews_date{
+	font-size: 0.2rem;
+	color: #999;
+	text-align: center;
+	margin-top: 0.16rem;
+}
+.industryNews_img{
+	width: 100%;
+	height: 2.58rem;
+	text-align: center;
+	margin-top: 0.45rem;
+}
+.industryNews_img img{
+	width: 90%;
+	height: 2.58rem;
+}
+.content{
+	font-size: 0.28rem;
+	color: #999;
+	padding-left: 0.38rem;
+	padding-right: 0.58rem;
+	line-height: 0.5rem;
+	padding-top: 0.4rem;
+	
+}
